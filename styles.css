@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #837E9F;
+    font-family: sans-serif;
+}
+
+body{
+    background: #22212C;
+}
+
+.box{
+    box-shadow: 3px 3px #0a0a0a21;    
+}
+/*==main==*/
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+/*==aside==*/
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+aside > div{
+    background: #302F3D;
+    border-radius: 10px; 
+}
+/*==profile==*/
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 348px;
+    height: 292px;
+}
+.profile img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: solid 2px #00FF00;
+}
+/*==contacts==*/
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 348px;
+    height: 348px;
+}
+
+.contacts img{
+    width: 20px;
+    height: 20px;
+    margin: 0 1rem;
+}
+/*==tecnologies==*/
+.tecnologies{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .5rem;
+    width: 348px;
+    height: 208px;
+}
+
+.tecnologies h2{
+    margin-left: -.5rem;
+}
+
+.tecnologies-balloons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.balloons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CB92B1;
+    color: black;
+    margin: .8rem .5rem;
+    width: 86px;
+    height: 24px;
+    border-radius: 50px;
+}
+/*==experiences==*/
+.experiences{ 
+    width: 348px;
+    height: 349px;
+}
+/*==education==*/
+.education{ 
+    width: 348px;
+    height: 352px;
+}
+
+/*==my-projects==*/
+.my-projects{
+    display: grid;
+    grid-template-rows: 10vh 30vh 10vh 20vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "h h"
+                         "p1 p2"
+                         "rp rp"
+                         "post post";
+                         gap: 2rem;
+    padding: 2rem;
+}
+
+.header-projects{
+    background: #302F3D;
+    border-radius: 10px;
+    grid-area: h;
+}
+
+.Projects{
+    background: #302F3D;
+    border-radius: 10px;
+}
+
+.recent-posts{
+    background: #302F3D;
+    border-radius: 10px;
+    grid-area: rp;
+}
+
+.post{
+    background: #302F3D;
+    border-radius: 10px;
+    grid-area: post;
+}
