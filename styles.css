@@ -1,140 +1,158 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: #837E9F;
-    font-family: sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #837e9f;
+  font-family: sans-serif;
 }
 
-body{
-    background: #22212C;
+body {
+  background: #22212c;
 }
 
-.box{
-    box-shadow: 3px 3px #0a0a0a21;    
+.box {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  box-shadow: 3px 3px #0a0a0a21;
 }
 /*==main==*/
-main{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 /*==aside==*/
-aside{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-aside > div{
-    background: #302F3D;
-    border-radius: 10px; 
+aside > div {
+  background: #302f3d;
+  border-radius: 10px;
 }
 /*==profile==*/
-.profile{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 348px;
-    height: 292px;
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 348px;
+  height: 292px;
 }
-.profile img{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: solid 2px #00FF00;
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 2px #00ff00;
 }
 /*==contacts==*/
 
-.contacts{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 348px;
-    height: 348px;
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 348px;
+  height: 348px;
 }
 
-.contacts img{
-    width: 20px;
-    height: 20px;
-    margin: 0 1rem;
+.contacts img {
+  width: 20px;
+  height: 20px;
+  margin: 0 1rem;
 }
 /*==tecnologies==*/
-.tecnologies{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    gap: .5rem;
-    width: 348px;
-    height: 208px;
+.tecnologies {
+  gap: 0.5rem;
+  width: 348px;
+  height: 208px;
 }
 
-.tecnologies h2{
-    margin-left: -.5rem;
+.tecnologies h2 {
+  margin-left: -0.5rem;
 }
 
-.tecnologies-balloons{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.tecnologies-balloons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.balloons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #CB92B1;
-    color: black;
-    margin: .8rem .5rem;
-    width: 86px;
-    height: 24px;
-    border-radius: 50px;
+.balloons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #cb92b1;
+  color: black;
+  font-weight: 700;
+  margin: 0.8rem 0.5rem;
+  width: 86px;
+  height: 24px;
+  border-radius: 50px;
 }
 /*==experiences==*/
-.experiences{ 
-    width: 348px;
-    height: 349px;
+.experiences {
+  width: 348px;
+  height: 349px;
+}
+
+.experiences ul {
+  padding: 1rem;
+}
+
+.experiences ul li {
+  margin-bottom: 1.5rem;
 }
 /*==education==*/
-.education{ 
-    width: 348px;
-    height: 352px;
+.education {
+  width: 348px;
+  height: 352px;
 }
 
+.education ul {
+  padding: 1rem;
+}
+
+.education ul li {
+  margin-bottom: 1rem;
+  width: 110px;
+}
 /*==my-projects==*/
-.my-projects{
-    display: grid;
-    grid-template-rows: 10vh 30vh 10vh 20vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "h h"
-                         "p1 p2"
-                         "rp rp"
-                         "post post";
-                         gap: 2rem;
-    padding: 2rem;
+.my-projects {
+  display: grid;
+  grid-template-rows: 10vh 30vh 10vh 20vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'h h'
+    'p1 p2'
+    'rp rp'
+    'post post';
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.header-projects{
-    background: #302F3D;
-    border-radius: 10px;
-    grid-area: h;
+.header-projects {
+  background: #302f3d;
+  border-radius: 10px;
+  grid-area: h;
 }
 
-.Projects{
-    background: #302F3D;
-    border-radius: 10px;
+.Projects {
+  background: #302f3d;
+  border-radius: 10px;
 }
 
-.recent-posts{
-    background: #302F3D;
-    border-radius: 10px;
-    grid-area: rp;
+.recent-posts {
+  background: #302f3d;
+  border-radius: 10px;
+  grid-area: rp;
 }
 
-.post{
-    background: #302F3D;
-    border-radius: 10px;
-    grid-area: post;
+.post {
+  background: #302f3d;
+  border-radius: 10px;
+  grid-area: post;
 }
