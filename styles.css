@@ -60,6 +60,12 @@ aside > div {
   height: 348px;
 }
 
+
+.contacts p{
+  display: flex;
+  align-items: center;
+}
+
 .contacts img {
   width: 20px;
   height: 20px;
@@ -135,16 +141,48 @@ aside > div {
 }
 
 .header-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
   background: #302f3d;
   border-radius: 10px;
   grid-area: h;
 }
 
-.Projects {
-  background: #302f3d;
-  border-radius: 10px;
+.header-projects a {
+  text-decoration: none;
 }
 
+.header-projects a:hover{
+  color: #9491a0;
+}
+
+.Projects {
+  display: flex;
+  gap: 1.2rem;
+  background: #302f3d;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Projects:hover{
+  border: solid;
+  transition: .1s;
+  border: solid 2px #77f077;
+
+}
+
+.Projects p{
+  display: flex;
+  align-items: center;
+}
+
+.Projects img{
+  margin: 0 1rem 0 0;
+}
+/*posts*/
 .recent-posts {
   background: #302f3d;
   border-radius: 10px;
@@ -152,7 +190,23 @@ aside > div {
 }
 
 .post {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem;
   background: #302f3d;
   border-radius: 10px;
   grid-area: post;
+}
+
+.post img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 2rem 0 0; 
+}
+
+
+.post div p{
+  margin-bottom: .8rem;
 }
