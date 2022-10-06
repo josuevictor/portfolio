@@ -19,7 +19,7 @@ body {
 /*==main==*/
 main {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 /*==aside==*/
@@ -194,6 +194,7 @@ aside > div {
   flex-direction: row;
   align-items: center;
   padding: 2rem;
+  height: 200px;
   background: #302f3d;
   border-radius: 10px;
   grid-area: post;
